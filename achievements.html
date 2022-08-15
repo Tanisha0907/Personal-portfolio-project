@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+  background-color:  #f2f1ef;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+.header {
+
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKK9jqoMpdedi_xHg4UCscQAufmO3leTbwLw&usqp=CAU);
+ 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  
+}
+#i {
+  float: left;
+  
+  width: 100%;
+  height: 200px; 
+}
+
+#i img {
+  padding: 5px;
+  width: 100px;
+  height: 99px;
+  overflow: hidden;
+}
+
+.zoom:hover {
+  -ms-transform: scale(5); /* IE 9 */
+  -webkit-transform: scale(3); /* Safari 3-8 */
+  transform: scale(5); 
+}
+
+/* For desktop: */
+.col-6 {width: 100%;
+    padding-left: 100px;
+    padding-top: 25px; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+}
+ 
+
+.dropdown {
+  width:30px;
+height:50px;
+background-color:rgba(10, 10, 10, 0);
+outline:none;
+cursor:pointer;
+position: absolute; top: 0; right: 0;
+padding-right: 20px;
+padding-top: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #101010f0;
+  color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute; top: 0; right: 0;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#i1{
+  border-radius: 40%;
+}
+
+#l1 {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 50px;
+  width: 200px;
+  background-color: #f1f1f101;
+  border: 5px;
+}
+
+.nav li a {
+  display: block;
+  color: rgb(248, 244, 244);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav li a:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Achievements And Goal</h1>
+</div>
+
+
+<div class="col-6">
+    <h4><u>Achievements</u></h4>
+    <ul>
+   <li> I have represented my school at Institute Of Plasma Research Center, Ahmedabad in scientific model making competition,</li><br>
+   <li> I have won many competitions in school such as elocution competition, rakhi making competition, singing competition, etc,</li><br>
+   <li> I have passed Prathma exam of Music in playing piano and singing with distinction.</li><br>
+    <li>I have paased my ssc with 99.98pr and hsc with 99.99pr.</li><br>
+    <p><u>Here are some of my certificates.</u></p>
+    <div id="i" >
+        <img class="zoom" src="pic51.jpeg"  width=" 200px" height="200px">
+        <img class="zoom" src="pic52.jpeg" width=" 200px" height="200px">
+        <img class="zoom" src="pic53.jpeg" width=" 200px" height="200px">
+        <img class="zoom" src="pic54.jpeg" width=" 200px" height="200px">
+        
+     </div>
+     <h4><u>Goal</u></h4>
+     <p>My goal is to persue my masters from wellknown university in abroad and have a good quality of life.
+    </p>
+    </ul>
+    
+   
+   
+    </div>
+
+</div>
+   
+<div class="dropdown">
+      
+  <span><img id="i1" height ="30px"  width="30px" src="logo.png"></span>
+  <div class="dropdown-content">
+     
+      <ul id="l1" class="nav">
+          <li><a href="home_page.html">Home</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="achievements.html">Achievements and goal</a></li>
+          <li><a href="feedbackform.html">Feedback form</a></li>
+          <li><a href="contactme.html">Contact me</a></li>
+        </ul>
+  </div>
+</div>
+
+
+</body>
+</html>

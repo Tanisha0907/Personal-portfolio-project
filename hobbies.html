@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+  background-color:  #f2f1ef;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.aside {
+  background-color: #B1A6A4;
+  padding: 15px;
+  color: #697184;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  
+}
+a:link {
+  text-decoration: none;
+  color:#413F3D;
+
+}
+
+a:visited {
+  text-decoration: none;
+  color:#413F3D;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:BLACK;
+}
+
+a:active {
+  text-decoration: underline;
+  color:white;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKK9jqoMpdedi_xHg4UCscQAufmO3leTbwLw&usqp=CAU);
+ 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #413F3D;
+  color:lightgrey;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  
+}
+
+.menu li:hover {
+  background-color: #000000;
+}
+
+
+.footer {
+  background-color: #f9bb92;
+  color: #423c95;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+
+.col-3 {width: 25%;}
+
+.col-6 {width: 50%; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+ 
+
+#i {
+  float: left;
+  
+  width: 100%;
+  height: 200px; 
+}
+#i1 {
+  float: left;
+  width: 100%;
+  height: 100px; 
+}
+
+#i img {
+  padding: 5px;
+  width: 100px;
+  height: 99px;
+ overflow: hidden;
+}
+#i1 img {
+  padding: 5px;
+  width: 100px;
+  height: 99px;
+   overflow: hidden;
+}
+.zoom:hover {
+  -ms-transform: scale(5); /* IE 9 */
+  -webkit-transform: scale(3); /* Safari 3-8 */
+  transform: scale(5); 
+}
+.dropdown {
+  width:30px;
+height:50px;
+background-color:rgba(10, 10, 10, 0);
+outline:none;
+cursor:pointer;
+position: absolute; top: 0; right: 0;
+padding-right: 20px;
+padding-top: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #101010f0;
+  color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute; top: 0; right: 0;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.logo{
+  border-radius: 40%;
+}
+
+#l1 {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 50px;
+  width: 200px;
+  background-color: #f1f1f101;
+  border: 5px;
+}
+
+.nav li a {
+  display: block;
+  color: rgb(248, 244, 244);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hobbies</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul><b>
+    <li>Drawing</li>
+      <li>Music</li>
+      <li>Baking</li>
+      <li>Art</li>
+      <li>Dance</li>
+      <li>Yoga</li></b>
+    </ul>
+  </div>
+
+<div class="col-6">
+    <h1>Drawing</h1>
+    <p>Here are some pictures of my drawings.</p>
+    <p><U>PENCIL SHADING:</U></p>
+   <div id="i" >
+      <img class="zoom" src="pic3.jpg"  width=" 200px" height="200px">
+      <img class="zoom" src="pic9.jpg" width=" 200px" height="200px">
+      <img class="zoom" src="pic5.jpg" width=" 200px" height="200px">
+      <img class="zoom" src="pic6.jpg" width=" 200px" height="200px">
+      <img class="zoom" src="pic11.jpg" width=" 200px" height="200px">
+      <img class="zoom" src="pic81.jpg" width=" 200px" height="200px">
+     
+      </div>
+      <P><U>OIL PASTEL:</U></P>
+      <div id="i" >
+        <img class="zoom" src="pic4.jpg"  width=" 200px" height="200px">
+        <img class="zoom" src="pic7.jpg" width=" 200px" height="200px">
+        <img class="zoom" src="pic15.jpg" width=" 200px" height="200px">
+        <img class="zoom" src="pic10.jpg" width=" 200px" height="200px">
+        <img class="zoom" src="pic27.jpeg" width=" 200px" height="200px">
+        <img class="zoom" src="pic28.jpg" width=" 200px" height="200px">
+      
+        </div>
+    
+    
+    
+     <h1>Music</h1>
+    <p>Music creates social cohesion, it speaks to all when words can fail, and wherever you go in the world, it is understood. Music is a universal gift and its power to connect people is without question. It is an art form with human interaction at its centre.</p>
+    <p>I personally love music and I have learnt how to play piano and guitar as well.</p>
+ 
+  
+  
+    <h1>Baking</h1>
+    <p>Baking is fun.I love to bake cakes,cookies,cheesecake,muffins etc.</p>
+    <div id="i1" >
+     
+      <img class="zoom" src="pic14.jpg"  width=" 200px" height="200px">
+     
+      </div>
+    
+      <h1>Art</h1>
+    <p>There are few art forms which I have learnt :Lamasa,Quilling,Sospeso,Fluid art,Resin art.</p>
+    <p>Here are some pictures of my art work:</p>
+    <p><u>QUILLING:</u></p>
+    <div id="i1" >
+      
+      <img class="zoom" src="pic30.jpeg"  width=" 200px" height="200px">
+      <img class="zoom" src="pic31.jpeg" width=" 200px" height="200px">
+      <img class="zoom" src="pic32.jpeg" width=" 200px" height="200px">
+      <img class="zoom" src="pic33.jpeg" width=" 200px" height="200px">
+  
+      </div>
+      <P><u>LAMASA:</u></P>
+      <div id="i1" > 
+        <img class="zoom" src="pic25.jpeg"  width=" 200px" height="200px">
+        </div>
+      <P><u>SOSPESO:</u></P>
+      <div id="i1" >
+      
+        <img class="zoom" src="pic22.jpeg"  width=" 200px" height="200px">
+        <img class="zoom" src="pic23.jpeg" width=" 200px" height="200px">
+        <img class="zoom" src="pic19.jpeg" width=" 200px" height="200px">
+        <img class="zoom" src="pic21.jpeg" width=" 200px" height="200px">
+    
+        </div>
+
+      <P><u>FLUID ART::</u></P>
+      <div id="i1" >
+      
+        <img class="zoom" src="pic2.jpg"  width=" 200px" height="200px">
+        <img class="zoom" src="pic16.jpg" width=" 200px" height="200px">
+        <img class="zoom" src="pic20.jpeg" width=" 200px" height="200px">
+        <img class="zoom" src="pic24.jpeg" width=" 200px" height="200px">
+    
+        </div>
+
+
+    
+     <h1>Yoga</h1>
+    <p>In yoga I know how to do a head stand and for me it's fun to learn new yoga posses.</p>
+ 
+  <div id="i1" >
+     
+    <img class="zoom" src="pic13.jpg"  width=" 200px" height="200px">
+   
+    </div>
+    </div>
+
+<div class="col-3 right">
+    <div class="aside">
+      <h2><u>What is?</u></h2>
+     <a  href="https://www.google.com/search?q=lamasa+art+information&sxsrf=ALiCzsbwjmuN5QZrQnaGIG58vX6Pc__SyA%3A1652513000432&ei=6Fh_YqCGGoKb4t4Pwd-XgAU&oq=lamasa+art+inform&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCCEQChCgATIHCCEQChCgATIHCCEQChCgATIHCCEQChCgATIHCCEQChCgAToHCAAQRxCwAzoECCMQJzoFCAAQkQI6BQgAEIAEOgYIABAWEB46CAgAEA8QFhAeOgcIIxCwAhAnSgQIQRgASgQIRhgAUIsEWN5BYJNMaAJwAHgAgAH1AYgBow2SAQUwLjMuNZgBAKABAcgBCMABAQ&sclient=gws-wiz" target="_blank">LAMASA</a><br>
+     <a  href="https://www.google.com/search?q=quilling+info&sxsrf=ALiCzsbyVsGrmcFTqgVF3zK_2vgCVb7e5g%3A1652512169951&ei=qVV_YrjPOczaz7sP8sa5-Ac&ved=0ahUKEwj4x4HHt973AhVM7XMBHXJjDn8Q4dUDCA4&uact=5&oq=quilling+info&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECcyBwgjEOoCECdKBAhBGABKBAhGGABQAFinGmCiHWgBcAF4AIABAIgBAJIBAJgBAKABAbABCsABAQ&sclient=gws-wiz" target="_blank">QUILLING</a><br>
+     <a  href="https://www.google.com/search?q=what+is+sospeso&sxsrf=ALiCzsb77Syd5G9fEIHuQ9svL19C1ew3wQ%3A1652513203983&ei=s1l_YtDWO9Djz7sPsNGr4AE&ved=0ahUKEwiQ_Im0u973AhXQ8XMBHbDoChwQ4dUDCA4&uact=5&oq=what+is+sospeso&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMggIABAPEBYQHjIICAAQDxAWEB4yBggAEBYQHjoHCAAQRxCwAzoKCAAQRxCwAxDJAzoECCMQJzoICAAQFhAKEB46CggAEA8QFhAKEB46BwgjEOoCECc6BQgAEJECOgsILhDHARCvARCRAjoLCAAQgAQQsQMQgwE6EAgAEIAEEIcCELEDEIMBEBQ6CAgAEIAEELEDOgsILhCABBCxAxCDAToECAAQQzoKCAAQgAQQhwIQFDoICAAQsQMQgwE6BwgAELEDEAo6BAgAEApKBAhBGABKBAhGGABQlwtYtDFgizRoAnABeASAAbYCiAHkHpIBCDAuMjEuMi4xmAEAoAEBsAEKyAEIwAEB&sclient=gws-wiz" target="_blank">SOSPESO</a><br>
+     <a  href="https://www.google.com/search?q=what+is+fluid+art&source=lmns&bih=504&biw=1067&hl=en&sa=X&ved=2ahUKEwjJrt7Su973AhXIi9gFHXNUCdkQ_AUoAHoECAEQAA" target="_blank">FLUID ART</a>
+     
+</div>
+</div></div>
+
+<div class="footer">
+<p>I have provided links for some art works if you are interested you can explore them.</p>
+</div>
+<div class="dropdown">
+     <div class="logo"> 
+    <span><img  height ="30px"  width="30px" src="logo.png"></span></div>
+    <div class="dropdown-content">
+       
+        <ul id="l1" class="nav">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="achievements.html">Achievements and goal</a></li>
+            <li><a href="feedbackform.html">Feedback form</a></li>
+            <li><a href="contactme.html">Contact me</a></li>
+          </ul>
+    </div>
+  </div>
+</body>
+</html>
